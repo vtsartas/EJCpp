@@ -1,0 +1,9 @@
+*** VAMOS AL DIRECTORIO DEL 'SOURCE' ***
+cd "c:\Users\progam-09\Desktop\VCS\EJCpp\Ejercicios2\"
+
+*** COMPILAMOS AÑADIENDO LOS cpp EXTRA QUE HAYAMOS IMPLEMENTADO ***
+*** RESULTARÁ EN ejercicios2.exe ***
+g++ ejercicios2.cpp ejercicio1.cpp ejercicio2.cpp -o ejercicios2
+
+*** EJECUCIÓN ***
+Invoke-Expression -Command "c:\Users\progam-09\Desktop\VCS\EJCpp\Ejercicios2\ejercicios2.exe”
