@@ -9,6 +9,10 @@
 
 #include "ejercicio1.h"
 #include "ejercicio2.h"
+#include "ejercicio3.h"
+#include "ejercicio4.h"
+#include "ejercicio5.h"
+#include "ejercicio6.h"
 
 using namespace std; // necesario para entrada/salida
 
@@ -47,19 +51,19 @@ int main() {
                     break;
                 // ejercicio 3 (mayor de 3 números)
                 case 3:
-                    //Ejercicio3.ejercicio3();
+                    ejercicio3();
                     break;                
                 // ejercicio 4 (hora válida)
                 case 4:
-                    //Ejercicio4.ejercicio4();
+                    ejercicio4();
                     break;
                 // ejercicio 5 (validar mes, decir días y mostrar texto)
                 case 5:
-                    //Ejercicio5.ejercicio5();
+                    ejercicio5();
                     break;
                 // ejercicio 6 (lista números entre dos dados)
                 case 6:
-                    //Ejercicio6.ejercicio6();
+                    ejercicio6();
                     break;
                 // ejercicio 7 (positivo/negativo y par/impar, tres versiones)
                 case 7:

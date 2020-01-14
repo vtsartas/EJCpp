@@ -1,8 +1,9 @@
-// 012 - condicionales
+// 011 - condicionales
 
 #include <iostream>
 
-#include <clocale>
+#include <stdlib.h> // COMPROBAR si era lo necesario para que funcionase en 'spanish'
+#include <clocale> // necesaria para la localización y codificación en español
 #include <windows.h> // necesaria para la codificación de caracteres en español en Windows
 
 using namespace std;

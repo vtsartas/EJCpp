@@ -32,7 +32,6 @@ void ejercicio2(){
         }
         cout<<"El carácter introducido está en "<<mensaje<<".\n";
 
-        // preguntamos si se quiere comprobar si otro número es par o impar
         cout<<"¿Quieres ver si otro carácter está en mayúsculas o minúsculas (s/n)? ";
         cin>>otro2;
 

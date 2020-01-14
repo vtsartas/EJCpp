@@ -2,6 +2,8 @@
 #define EJERCICIO1_H
 // la definición debe ser única
 
+#include "utils.h"
+
 using namespace std;
 
 void ejercicio1();

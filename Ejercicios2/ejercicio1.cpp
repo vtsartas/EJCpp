@@ -8,6 +8,7 @@
 #include <windows.h> // necesaria para la codificación de caracteres en español en Windows
 
 #include "ejercicio1.h"
+#include "utils.h"
 
 using namespace std; // necesario para entrada/salida
 
@@ -38,8 +39,4 @@ void ejercicio1(){
 
         } while (otro1=='s');
 
-}
-
-bool parimpar(int n){
-    return (n%2==0)?true:false;
 }
