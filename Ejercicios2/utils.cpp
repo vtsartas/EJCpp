@@ -32,3 +32,11 @@ bool parimpar(int n){
 bool posinega(int n){
     return(n>0)?true:false;
 }
+
+// retorna el texto del ordinal del número indicado
+string ordinales(int n){
+
+    string lista[]={"primer","segundo","tercer","cuarto","quinto","sexto","séptimo","octavo","noveno","décimo"};
+    return lista[n];
+    
+}

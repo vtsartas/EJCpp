@@ -17,4 +17,6 @@ bool parimpar(int n);
 
 bool posinega(int n);
 
+string ordinales(int n);
+
 #endif 

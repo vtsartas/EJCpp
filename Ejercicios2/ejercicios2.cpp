@@ -13,6 +13,8 @@
 #include "ejercicio4.h"
 #include "ejercicio5.h"
 #include "ejercicio6.h"
+#include "ejercicio7.h"
+#include "ejercicio8.h"
 
 using namespace std; // necesario para entrada/salida
 
@@ -67,11 +69,11 @@ int main() {
                     break;
                 // ejercicio 7 (positivo/negativo y par/impar, tres versiones)
                 case 7:
-                    //Ejercicio7.ejercicio7();
+                    ejercicio7();
                     break;
                 // ejercicio 8 (contar positivos/negativos y decir su media diferenciada)
                 case 8:
-                    //Ejercicio8.ejercicio8();
+                    ejercicio8();
                     break;
                 // ejercicio 9 (mostrar 20 primeros pares)
                 case 9:
