@@ -21,29 +21,34 @@ void ejercicio8(){
     SetConsoleCP(1252); // Cambiar STDIN -  Necesario para máquinas Windows
     SetConsoleOutputCP(65001); // Cambiar STDOUT - Necesario para máquinas Windows
 
-    int version;
     char otro8;
+    string mensaje;
 
-    int CANT_NUM=10,i,positivos;
+    const int CANT_NUM=10;
+    int i;
 
     // como C++ no permite que los métodos retornen arrays, debemos usar punteros para hacer tal función.
     // para recorrerlo, tendremos que ir señalando las siguientes posiciones de memoria en el for en lugar de usar array[]
     
+    int l[CANT_NUM];
     int *p; // definimos un puntero entero que hará las veces de 'array' cuando apuntemos a uno
+
+    int cneg,cpos,ccer,csump,csumn;
+
+    Posinegaceros lista(0,0,0,0,0); // creamos un objeto de la clase que hemos montado para facilitar la obtención de datos del listado
 
     do{
         
         p=rellenaLista(CANT_NUM); // apuntamos el puntero a la lista rellena
 
-        cout<<*p;
-
-        Posinegaceros lista(0,0,0,0,0); // creamos un objeto de la clase que hemos montado para facilitar la obtención de datos del listado
-
         lista=lista.operalista(p);
 
-        string mensaje="En el listado de "+to_string(CANT_NUM)+" valores que has introducido había "+lista.getContapos+
-        " positivos y"+(lista.getContapos>0?(" su media es "+(lista.getSumapos/lista.getContapos)):"")+", y "+lista.getContaneg+
-        (lista.getContaneg>0?(" cuya media es "+(lista.getSumaneg/lista.getContaneg)):"")+".\n";
+        mensaje="En el listado de "+to_string(CANT_NUM)+" valores que has introducido había ";
+        mensaje+=to_string(lista.getContapos())+" positivos y ";
+        mensaje+=(lista.getContapos()>0?("su media es "+to_string(lista.getSumapos()/lista.getContapos())):"")+" y ";
+        mensaje+=to_string(lista.getContaneg())+" negativos";
+        mensaje+=(lista.getContaneg()>0?(" cuya media es "+to_string(lista.getSumaneg()/lista.getContaneg())):"");
+        mensaje+=".\n";
 
         cout<<mensaje;
 
@@ -69,8 +74,10 @@ void ejercicio8(){
 // el método es del tipo int* y devuelve un puntero a un array
 int * rellenaLista(int tam){
     int i=0; // contador
-    int * puntarray= new int [tam]; // definiremos un puntero a un objeto array que podremos usar como tal con [i], etc
+    //int * puntarray= new int [tam]; // definiremos un puntero a un objeto array que podremos usar como tal con [i], etc
     int num;
+
+    int puntarray[tam];
 
     // lo iremos rellenando con números enteros diferentes a 0
     cout<<"Introduce "<<tam<<" números enteros, positivos o negativos (no '0').\n";

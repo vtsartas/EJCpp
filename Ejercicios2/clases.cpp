@@ -1,8 +1,9 @@
 #include "clases.h"
-
+#include <string>
+#include <iostream>
 
    // método constructor
-Clases::Posinegaceros(int cp, int cn, int cc, int sp, int sn){
+Posinegaceros::Posinegaceros(int cp, int cn, int cc, int sp, int sn){
         contapos=cp;
         contaneg=cn;
         contaceros=cc;
@@ -13,43 +14,43 @@ Clases::Posinegaceros(int cp, int cn, int cc, int sp, int sn){
 // Getter/setters
 
     // contapos
-Clases::void setContapos(int cp) {
+void Posinegaceros::setContapos(int cp) {
     contapos = cp;
     }
-Clases::int getContapos() {
+int Posinegaceros::getContapos() {
     return contapos;
     }
     // contaneg
-Clases::void setContaneg(int cn) {
+void Posinegaceros::setContaneg(int cn) {
     contaneg = cn;
     }
-Clases::int getContaneg() {
+int Posinegaceros::getContaneg() {
     return contaneg;
     }
     // contaceros
-Clases::void setContaceros(int cc) {
+void Posinegaceros::setContaceros(int cc) {
     contaceros = cc;
     }
-Clases::int getContaceros() {
+int Posinegaceros::getContaceros() {
     return contaceros;
     }
     // sumapos
-Clases:: void setSumapos(int sp) {
+void Posinegaceros::setSumapos(int sp) {
     sumapos = sp;
     }
-Clases::int getSumapos() {
+int Posinegaceros::getSumapos() {
     return sumapos;
     }
     // sumaneg
-Clases::void setSumaneg(int sn) {
+void Posinegaceros::setSumaneg(int sn) {
     sumaneg = sn;
     }
-Clases::int getSumaneg() {
+int Posinegaceros::getSumaneg() {
     return sumaneg;
     }
 
 
-Clases::Posinegaceros operalista(int lista []){
+Posinegaceros Posinegaceros::operalista(int *lista){
 
     Posinegaceros numero(0,0,0,0,0);
     
@@ -57,15 +58,15 @@ Clases::Posinegaceros operalista(int lista []){
 
     for (s=0;s<(sizeof(lista)/sizeof(lista[0]));s++){
         if (lista[s]>0){
-            numero.setContapos++;
-            numero.setSumapos+=lista[s];
+            numero.setContapos(numero.getContapos()+1);
+            numero.setSumapos(numero.getSumapos()+lista[s]);
         }
         else if (lista[s]<0){
-            numero.setContaneg++;
-            numero.setSumaneg+=lista[s];
+            numero.setContaneg(numero.getContaneg()+1);
+            numero.setSumaneg(numero.getSumaneg()+lista[s]);
         }
         else {
-            numero.setContaceros++;
+            numero.setContaceros(numero.getContaceros()+1);
         }
     }
     return numero;

@@ -4,7 +4,7 @@ cd "c:\Users\progam-09\Desktop\VCS\EJCpp\CursoCppATS\"
 
 *** COMPILAMOS AÑADIENDO LOS cpp EXTRA QUE HAYAMOS IMPLEMENTADO ***
 *** RESULTARÁ EN ejercicios2.exe ***
-g++ ejercicios2.cpp utils.cpp ejercicio1.cpp ejercicio2.cpp ejercicio3.cpp ejercicio4.cpp ejercicio5.cpp ejercicio6.cpp ejercicio7.cpp ejercicio8.cpp -o ejercicios2
+g++ ejercicios2.cpp utils.cpp clases.cpp ejercicio1.cpp ejercicio2.cpp ejercicio3.cpp ejercicio4.cpp ejercicio5.cpp ejercicio6.cpp ejercicio7.cpp ejercicio8.cpp -o ejercicios2 -static-libgcc -static-libstdc++
 g++ video011.cpp -o video011
 
 *** EJECUCIÓN ***

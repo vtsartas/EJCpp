@@ -12,13 +12,7 @@ class Posinegaceros{
  
     public:
        // método constructor
-        Posinegaceros(int cp, int cn, int cc, int sp, int sn){
-            contapos=cp;
-            contaneg=cn;
-            contaceros=cc;
-            sumapos=sp;
-            sumaneg=sn;
-        }
+        Posinegaceros(int cp, int cn, int cc, int sp, int sn);
 
     // Getter/setters
 
@@ -38,7 +32,7 @@ class Posinegaceros{
         void setSumaneg(int sn);
         int getSumaneg();
     
-        Posinegaceros operalista(int lista []);
+        Posinegaceros operalista(int *lista);
 };
 
 #endif

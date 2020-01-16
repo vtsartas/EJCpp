@@ -1,6 +1,8 @@
 #ifndef EJERCICIO8_H
 #define EJERCICIO8_H
 
+#include <string>
+
 #include "clases.h"
 #include "utils.h"
 
